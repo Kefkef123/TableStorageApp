@@ -14,6 +14,13 @@ namespace TableStorageApp
             _table.CreateIfNotExists();
         }
 
+        public ActionResult Index()
+        {
+            var customers = _table.ExecuteQuery(new TableQuery<CustomerEntity>());
+            
+            return View(customers);
+        } 
+
         public async Task<string> AddCustomer()
         {
             var customer = new CustomerEntity("Harp", "Walter")

@@ -1,0 +1,19 @@
+﻿@model IEnumerable<TableStorageApp.CustomerEntity>
+
+<table>
+	<tr>
+		<th>voornaam</th>
+		<th>achternaam</th>
+		<th>Email-adres</th>
+		<th>Telefoonnummers</th>
+	</tr>
+	@foreach (var customer in Model)
+	{
+			<tr>
+				<td>@customer.PartitionKey</td>
+				<td>@customer.RowKey</td>
+				<td>@customer.Email</td>
+				<td>@customer.PhoneNumber</td>
+			</tr>
+	}
+</table>
