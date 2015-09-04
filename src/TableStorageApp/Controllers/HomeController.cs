@@ -19,23 +19,26 @@ namespace TableStorageApp
             var customers = _table.ExecuteQuery(new TableQuery<CustomerEntity>());
             
             return View(customers);
-        } 
+        }
 
-        public async Task<string> AddCustomer()
+        public ActionResult Create()
         {
-            var customer = new CustomerEntity("Harp", "Walter")
-            {
-                Email = "Henk@vanHal.com",
-                PhoneNumber = "06-12345678"
-            };
+            return View();
+        }
+
+        [HttpPost]
+        public async Task<ActionResult> Create(CustomerForm form)
+        {
+            var customer = _modelFactory.Create(form);
 
             await _table.ExecuteAsync(TableOperation.Insert(customer));
 
-            return "aap";
+            return RedirectToAction("Index");
         }
 
         private readonly CloudStorageAccount _storageAccount = CloudStorageAccount.DevelopmentStorageAccount;
         private readonly CloudTableClient _tableClient;
         private readonly CloudTable _table;
+        private readonly ModelFactory _modelFactory = new ModelFactory();
     }
 }

@@ -1,0 +1,23 @@
+﻿@model TableStorageApp.CustomerForm
+
+@using (Html.BeginForm("Create"))
+{
+	<p>
+		<label>Voornaam:</label>
+		@Html.TextBoxFor(m => m.FirstName)
+	</p>
+	<p>
+		<label>Achternaam:</label>
+		@Html.TextBoxFor(m => m.LastName)
+	</p>
+	<p>
+		<label>E-mailadres</label>
+		@Html.TextBoxFor(m => m.EmailAddress)
+	</p>
+	<p>
+		<label>Telefoonnummer</label>
+		@Html.TextBoxFor(m => m.PhoneNumer)
+	</p>
+	<button type="submit">Versturen</button>
+	
+}
