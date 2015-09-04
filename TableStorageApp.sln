@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.23107.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{39ADFFAF-E068-41FB-A03A-3570651F39BE}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{057F7A02-413D-407B-B6E1-2EE84293BE6E}"
+	ProjectSection(SolutionItems) = preProject
+		global.json = global.json
+	EndProjectSection
+EndProject
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "TableStorageApp", "src\TableStorageApp\TableStorageApp.xproj", "{FA86B81B-D683-46A9-8446-507A8EC39AAD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FA86B81B-D683-46A9-8446-507A8EC39AAD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FA86B81B-D683-46A9-8446-507A8EC39AAD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FA86B81B-D683-46A9-8446-507A8EC39AAD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FA86B81B-D683-46A9-8446-507A8EC39AAD}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{FA86B81B-D683-46A9-8446-507A8EC39AAD} = {39ADFFAF-E068-41FB-A03A-3570651F39BE}
+	EndGlobalSection
+EndGlobal
