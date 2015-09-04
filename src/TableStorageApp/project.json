@@ -4,7 +4,10 @@
 
   "dependencies": {
     "Microsoft.AspNet.Server.IIS": "1.0.0-beta5",
-    "Microsoft.AspNet.Server.WebListener": "1.0.0-beta5"
+    "Microsoft.AspNet.Server.WebListener": "1.0.0-beta5",
+    "WindowsAzure.Storage": "5.0.2",
+    "Microsoft.AspNet.Mvc": "6.0.0-beta5",
+    "Microsoft.WindowsAzure.ConfigurationManager": "3.1.0"
   },
 
   "commands": {
@@ -12,8 +15,7 @@
   },
 
   "frameworks": {
-    "dnx451": { },
-    "dnxcore50": { }
+    "dnx451": { }
   },
 
   "publishExclude": [
